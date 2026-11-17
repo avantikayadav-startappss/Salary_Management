@@ -1,10 +1,10 @@
-from django.shortcuts import render
-
-# Create your views here.
 from rest_framework import viewsets, filters
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
 
 from .models import Employee
 from .serializers import EmployeeSerializer
+from .insights import salary_stats
 
 
 class EmployeeViewSet(viewsets.ModelViewSet):
@@ -22,3 +22,13 @@ class EmployeeViewSet(viewsets.ModelViewSet):
         if job_title:
             qs = qs.filter(job_title=job_title)
         return qs
+
+
+@api_view(["GET"])
+def insights_by_country(request):
+    return Response(salary_stats("country"))
+
+
+@api_view(["GET"])
+def insights_by_job_title(request):
+    return Response(salary_stats("job_title"))
