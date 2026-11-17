@@ -27,3 +27,5 @@ hain" ke sawaalon ke jawab le sake.
 - Aggregates DB mein (not in Python/JS) taaki 10k+ rows pe fast rahe
 - Indexes on country, job_title
 - Per-employee currency field (multi-country)
+- Insights currency ke andar group hote hain (INR aur USD mix karke average galat hota)
+- Median Python mein (SQLite mein built-in nahi); Postgres pe percentile_cont use karte
