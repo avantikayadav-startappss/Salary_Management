@@ -1,6 +1,6 @@
 # ACME Salary Management
 
-A web app for the HR Manager of ACME to manage salaries of 10,000 employees across countries, and to answer questions like "how do we pay people?". It replaces the Excel sheets HR uses today.
+A web app for the HR Manager of ACME to manage salaries of 1,000 employees across countries, and to answer questions like "how do we pay people?". It replaces the Excel sheets HR uses today.
 
 Live app: https://salary-management-olive.vercel.app
 Demo video: https://drive.google.com/file/d/1ay3TIUu9oPFE_H2lwR67n1trxGk91_6G/view?usp=drivesdk
