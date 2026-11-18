@@ -14,7 +14,7 @@ I'm on a free hosting plan, so the first load can take up to a minute while the 
 - Insights by country and by job title: min, max, average, median salary and headcount
 - Insights are grouped by currency so INR and USD never get mixed
 - Salary must be greater than 0 and email must be unique
-- Seed script that creates 10,000 employees
+- Seed script that creates 1,000 employees
 
 ## Stack
 
@@ -58,7 +58,7 @@ python manage.py test
 
 ## Design decisions
 
-- Count, min, max and average are calculated in the database so they stay fast with 10k rows.
+- Count, min, max and average are calculated in the database so they stay fast with 1k rows.
 - Median is calculated in Python because SQLite has no median function.
 - Indexes on `country` and `job_title`.
 - I left out auth, payroll and currency conversion on purpose. The reasons are in the docs below.
